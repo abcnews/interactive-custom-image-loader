@@ -22,6 +22,11 @@ Array.prototype.slice.call(document.querySelectorAll(`a[name^="${NAME_PREFIX}"]`
       return console.error(err || new Error(response.statusCode));
     }
 
+    // Reselect in case it no longer exists
+    if (!(anchorEl = document.querySelector(`a[name^="${NAME_PREFIX}${id}"]`))) {
+      return;
+    }
+
     const imgHTML = body.match(new RegExp(`<img [^>]*${id}[^>]*>`))[0];
 
     const props = Object.keys(IMG_ATTRIBUTE_PATTERNS).reduce((memo, prop) => {
