@@ -1,4 +1,8 @@
 .root {
+  text-align: center;
+}
+
+.root > img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;

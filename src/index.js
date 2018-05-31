@@ -42,6 +42,7 @@ Array.prototype.slice.call(document.querySelectorAll(`a[name^="${NAME_PREFIX}"]`
     const component = new Image(props);
 
     anchorEl.parentElement.insertBefore(component.el, anchorEl);
+    anchorEl.parentElement.removeChild(anchorEl);
   });
 });
 
