@@ -1,0 +1,20 @@
+{
+  "name": "interactive-custom-image-loader",
+  "version": "0.0.0",
+  "description": "A project generated from aunty's basic-app template.",
+  "license": "MIT",
+  "private": true,
+  "contributors": [
+    "Colin Gourlay <Gourlay.Colin@abc.net.au>"
+  ],
+  "aunty": "basic-app",
+  "scripts": {
+    "start": "aunty serve"
+  },
+  "devDependencies": {
+    "@abcnews/aunty": "^7.8.0"
+  },
+  "dependencies": {
+    "xhr": "^2.5.0"
+  }
+}
