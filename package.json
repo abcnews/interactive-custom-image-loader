@@ -12,7 +12,7 @@
     "start": "aunty serve"
   },
   "devDependencies": {
-    "@abcnews/aunty": "^7.8.0"
+    "@abcnews/aunty": "^8.0.0"
   },
   "dependencies": {
     "xhr": "^2.5.0"
